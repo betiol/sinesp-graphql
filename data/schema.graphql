@@ -1,21 +1,20 @@
-type City {
-    temp: Int, 
-    date: String,
-    time: String,
-    condition_code: String,
-    description: String,
-    currently: String,
-    cid: String,
-    city: String,
-    img_id: String,
-    humidity: String,
-    wind_speedy: String,
-    sunrise: String,
-    sunset: String,
-    condition_slug: String,
-    city_name: String,
+type Sinesp {
+    codigoRetorno: String!,
+    mensagemRetorno: String!,
+    codigoSituacao: String!,
+    situacao: String!,
+    modelo: String!,
+    marca: String!,
+    cor: String!,
+    ano: String!,
+    anoModelo: String!,
+    placa: String!,
+    data: String!,
+    uf: String!,
+    municipio: String!,
+    chassi: String!
 }
 
 type Query {
-    weatherByCity(city: String!): City
+    sinespQuery(placa: String!): Sinesp
 }
