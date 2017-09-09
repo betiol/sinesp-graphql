@@ -33,7 +33,7 @@ query {
     codigoSituacao
     situacao
     modelo
-  	marca
+    marca
     cor
     ano
     anoModelo
